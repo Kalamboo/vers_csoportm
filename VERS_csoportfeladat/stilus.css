@@ -1,0 +1,19 @@
+@charset "UTF-8"; 
+.nemlatszik{
+    visibility: hidden;
+}
+.latszik{
+    visibility: visible;
+}
+
+@media screen and (max-width: 400px) {
+    ul li {
+      width: 100%;
+      
+    }
+    ul{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  }
