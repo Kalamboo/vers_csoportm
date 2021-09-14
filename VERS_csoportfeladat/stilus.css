@@ -1,4 +1,21 @@
 @charset "UTF-8"; 
+main{
+    width:80%;
+    max-width:800px;
+    margin:auto;
+    padding:10px;
+    background-color: cadetblue; 
+ }
+
+ article div{
+    border: 5px solid black;
+    margin: 10pt;
+ }
+ article div h3{
+     color: red;
+     font-style: italic;
+ }
+
 .nemlatszik{
     visibility: hidden;
 }
