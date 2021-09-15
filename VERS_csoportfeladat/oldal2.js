@@ -1,5 +1,6 @@
 var aktObj = {cím : "", szerző : "", vers : "", kép : ""};
 var objTomb = [];
+var vanE = false;
 
 $(function(){
     aktObjektum = {cím:"Nyúliskola",szerző:"Romhányi József",vers:"Részlet: <br> Erdőszélen nagy a móka, mulatság,<br>iskolába gyűlnek mind a nyulacskák.<br>A tanító ott középen az a nyúl,<br>kinek füle leghosszabbnak bizonyul.<br>Kezdi az oktatást egy fej káposztával,<br>Hallgatják is tátott szájjal.<br>",kép:"nyuliskola.jpg"};
@@ -11,7 +12,13 @@ $(function(){
 });
 
 function versetKiir(){
-    for (var i = 0; i < objTomb.length; i++) {
-        $("article").append('<div><h3>'+objTomb[i]["cím"]+'</h3><p>'+objTomb[i]["vers"]+'</p><p>'+objTomb[i]["szerző"]+'</p></div>');
+    if (vanE == false){
+        for (var i = 0; i < objTomb.length; i++) {
+            $("article").append('<div><h3>'+objTomb[i]["cím"]+'</h3><p>'+objTomb[i]["vers"]+'</p><p>'+objTomb[i]["szerző"]+'</p></div>');
+        }
+        vanE = true;
+    }else{
+        $("article").empty();
+        vanE = false;
     }
 }

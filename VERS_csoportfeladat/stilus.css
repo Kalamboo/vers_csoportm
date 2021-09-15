@@ -7,6 +7,10 @@ main{
     background-color: cadetblue; 
  }
 
+aside{
+    padding-top: 10px;
+}
+
  article div{
     border: 5px solid black;
     margin: 10pt;
