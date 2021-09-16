@@ -1,23 +1,77 @@
-@charset "utf-8";
-main,article,header,nav{
-    padding: 10px;
-    margin: 5px;
-border: 4px gray;
-}
-main{
-    width: 80%;
 
-}
+@charset "utf-8";
+
 article{
-    background-color: green;
     display: grid;
 grid-template-columns: auto auto;
 }
-@media screen and (max-width:400px){
-    main{
-        width: 100%;
+
+
+main{
+    width:80%;
+    max-width:800px;
+    margin:auto;
+    padding:10px;
+    background-color: cadetblue; 
+ }
+
+aside{
+    padding-top: 10px;
+}
+
+ article div{
+    border: 5px solid black;
+    margin: 10pt;
+ }
+ article div h3{
+     color: red;
+     font-style: italic;
+ }
+
+.nemlatszik{
+    visibility: hidden;
+}
+.latszik{
+    visibility: visible;
+}
+
+img{
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width: 400px) {
+    ul li {
+      width: 100%;
+      
     }
-article{
-    grid-template-columns: auto;
-}
-}
+    ul{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  }
+
